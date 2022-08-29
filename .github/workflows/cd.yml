@@ -33,7 +33,7 @@ jobs:
             - uses: actions/setup-node@v1
               with:
                   node-version: 14
-            - name: go to service-one and run node
+            - name: go to service-one and run node file
               run: |
                 ls
                 cd service-one
