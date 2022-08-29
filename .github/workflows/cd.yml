@@ -31,7 +31,6 @@ jobs:
               run: |
                 ls
                 cd service-one
-                ls
                 pwd
                 yarn install
                 node src/index.js
