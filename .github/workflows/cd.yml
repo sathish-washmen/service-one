@@ -23,7 +23,7 @@ jobs:
             - uses: actions/checkout@v2
               with: 
                 repository: sathish-washmen/workspaces-demo
-                token: ${{secrets.GH_TOKEN}}
+                ssh-key: ${{ secrets.SSH_TOKEN }}
             - name: Checkout to sub modules
               run: |
                 git submodule init service-one shared-libs
