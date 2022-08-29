@@ -23,7 +23,8 @@ jobs:
             - uses: actions/checkout@v2
               with: 
                 repository: sathish-washmen/workspaces-demo
-                token: ${{GH_TOKEN}}
+              env:
+                token: ${{secrets.NPM_TOKEN}}
             - name: Checkout to sub modules
               run: |
                 git submodule init service-one shared-libs
