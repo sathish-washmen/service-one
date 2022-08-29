@@ -23,7 +23,6 @@ jobs:
             - uses: actions/checkout@v2
               with: 
                 repository: sathish-washmen/workspaces-demo
-                path: workspace-demo
               env:
                 token: ${{secrets.GH_TOKEN}}
             - name: Checkout to sub modules
